@@ -1,0 +1,50 @@
+# ================================
+# GITIGNORE FINAL - CODEIGNITER 3
+# ================================
+
+# 🍏 MacOS system file
+.DS_Store
+
+# 🔒 Logs & Cache
+application/cache/*
+!application/cache/index.html
+
+application/logs/*
+!application/logs/index.html
+
+# 🔐 File konfigurasi sensitif
+application/config/database.php
+
+# 🔥 Keep .htaccess
+!application/*/.htaccess
+
+# 🧱 Composer
+/vendor/
+composer.lock
+
+# 🧪 Testing file (CI Testing / Mock)
+tests/mocks/database/ci_test.sqlite
+/tests/tests/
+/tests/results/
+
+# 📘 CI User Guide (jika ada di repo)
+user_guide_src/build/*
+user_guide_src/cilexer/build/*
+user_guide_src/cilexer/dist/*
+user_guide_src/cilexer/pycilexer.egg-info/*
+
+# 🛠️ IDE/editor config
+.nbproject/
+.idea/*
+*.sublime-workspace
+*.sublime-project
+
+# 💬 Sublime Text Cache
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+# ❓ CI SYSTEM CORE (optional)
+# Kalau kolaborasi tim dan gak pakai composer: hapus tanda pagar (#)
+# Kalau pakai composer, boleh tetap di-ignore
+#/system/
