@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tentang Kami - ReneoLaundry</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
 
     <!-- Container Utama -->
-    <div>
+    <div class="container py-5">
 
         <!-- Judul -->
         <section>
@@ -20,10 +21,10 @@
         </section>
 
         <!-- Deskripsi dan Gambar Gedung -->
-        <section>
-            <div>
+        <section class="mb-5">
+            <div class="row align-items-center">
                 <!-- Deskripsi -->
-                <div>
+                <div class="col-md-6 mb-4 mb-md-0">
                     <p>
                         Reneo Laundry adalah layanan laundry profesional yang hadir untuk memudahkan hidup Anda. Kami
                         berkomitmen untuk memberikan pelayanan terbaik dalam mencuci, menyetrika, dan merawat pakaian
@@ -36,7 +37,7 @@
                     </p>
                 </div>
                 <!-- Gambar -->
-                <div>
+                <div class="col-md-6 about-image">
                     <img src="https://via.placeholder.com/400x250" alt="Gedung ReneoLaundry">
                 </div>
             </div>
@@ -44,26 +45,32 @@
 
         <!-- Peta dan Info Kontak -->
         <section>
-            <div>
+            <div class="row">
                 <!-- Peta -->
-                <div>
-                    <img src="https://via.placeholder.com/400x250" alt="Peta Lokasi">
+                <div class="col-md-6 mb-4 mb-md-0 map-image>
+                    <img src=" asset\depan.png" alt="Peta Lokasi">
                 </div>
                 <!-- Kontak -->
-                <div>
-                    <p><strong>Alamat:</strong> Perum Bumi Mas 1 Blk. H No.11 Mojorejo, Kec. Taman, Kota Madiun, Jawa
-                        Timur 63139</p>
-                    <p><strong>Telepon:</strong> 085837043478</p>
-                    <p><strong>Instagram:</strong> @reneolaundry</p>
-                    <div>
-                        <a href="#"><img src="https://via.placeholder.com/30" alt="WhatsApp Icon"></a>
-                        <a href="#"><img src="https://via.placeholder.com/30" alt="Instagram Icon"></a>
+                <div class="col-md-6">
+                    <div class="contact-info">
+                        <p class="mb-3"><strong>Alamat:</strong> Perum Bumi Mas 1 Blk. H No.11 Mojorejo, Kec. Taman,
+                            Kota Madiun,
+                            Jawa
+                            Timur 63139</p>
+                        <p class="mb-3"><strong>Telepon:</strong> 085837043478</p>
+                        <p class="mb-3"><strong>Instagram:</strong> @reneolaundry</p>
+                        <div class="sosial-icon">
+                            <a href="#" class="social-icon"><img src="https://via.placeholder.com/30"
+                                    alt="WhatsApp Icon"></a>
+                            <a href="#" class="social-icon"><img src=" https://via.placeholder.com/30"
+                                    alt="Instagram Icon"></a>
+                        </div>
                     </div>
                 </div>
-            </div>
         </section>
 
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
