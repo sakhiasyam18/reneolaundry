@@ -5,17 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tentang Kami - ReneoLaundry</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
-<body>
+<body class="bg-white">
 
     <!-- Container Utama -->
     <div class="container py-5">
 
         <!-- Judul -->
-        <section>
-            <h1>
+        <section class="text-center mb-5">
+            <h1 class="selection-tittle">
                 <span>Tentang</span> <strong>Kami</strong>
             </h1>
         </section>
@@ -24,7 +25,7 @@
         <section class="mb-5">
             <div class="row align-items-center">
                 <!-- Deskripsi -->
-                <div class="col-md-6 mb-4 mb-md-0">
+                <div class="col-md-6">
                     <p>
                         Reneo Laundry adalah layanan laundry profesional yang hadir untuk memudahkan hidup Anda. Kami
                         berkomitmen untuk memberikan pelayanan terbaik dalam mencuci, menyetrika, dan merawat pakaian
@@ -37,8 +38,8 @@
                     </p>
                 </div>
                 <!-- Gambar -->
-                <div class="col-md-6 about-image">
-                    <img src="https://via.placeholder.com/400x250" alt="Gedung ReneoLaundry">
+                <div class=" rounded-2 col-md-6 about-image">/
+                    <img src="" alt=" Gedung ReneoLaundry">/
                 </div>
             </div>
         </section>
@@ -58,7 +59,7 @@
                             Jawa
                             Timur 63139</p>
                         <p class="mb-3"><strong>Telepon:</strong> 085837043478</p>
-                        <p class="mb-3"><strong>Instagram:</strong> @reneolaundry</p>
+                        <p class="mb-4"><strong>Instagram:</strong> @reneolaundry</p>
                         <div class="sosial-icon">
                             <a href="#" class="social-icon"><img src="https://via.placeholder.com/30"
                                     alt="WhatsApp Icon"></a>
@@ -70,8 +71,7 @@
         </section>
 
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
