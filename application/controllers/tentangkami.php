@@ -8,5 +8,8 @@ class tentangkami extends CI_Controller
     {
         // Memuat view home.php
         $this->load->view('tentangkami');
+
+        //helper url 
+        $this->load->helper('url');
     }
 }
