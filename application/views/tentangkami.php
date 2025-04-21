@@ -10,6 +10,8 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <!-- extend css dari aku  -->
+    <link rel="stylesheet" href="<?php echo base_url('assets/css/tentangkami.css'); ?>" />
 </head>
 
 <body class="bg-white">
@@ -41,8 +43,9 @@
                     </p>
                 </div>
                 <!-- Gambar -->
-                <div class=" rounded-2 col-md-6 about-image">/
-                    <img src="" alt=" Gedung ReneoLaundry">/
+                <div class="">
+                    <img src="<?php echo base_url('assets/depan.png'); ?>" alt="Gedung ReneoLaundry"
+                        class="img-fluid rounded-2">
                 </div>
             </div>
         </section>
