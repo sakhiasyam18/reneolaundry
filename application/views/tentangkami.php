@@ -23,11 +23,11 @@
     <div class="container py-5">
 
         <!-- Judul -->
-        <section class="page-title mb-4">
+        <h1 class="page-title mb-4">
             <h1>
                 <span class="text-primary">Tentang</span> <strong style="color: blue;">Kami</strong>
             </h1>
-        </section>
+        </h1>
 
         <!-- Deskripsi dan Gambar Gedung -->
         <div class="card shadow-sm mb-5">
@@ -56,15 +56,14 @@
 
                     <!-- Gambar -->
                     <div class="col-lg-6 ps-lg-4 mt-4 mt-lg-0">
-                        <img src="<?php echo base_url('public/assets/depan.png'); ?>" alt="Gedung ReneoLaundry"
-                            class="img-fluid rounded-2">
+                        <div class="about-image">
+                            <img src="<?php echo base_url('public/assets/depan.png'); ?>" alt="Gedung ReneoLaundry"
+                                class="img-fluid rounded-2">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="container py-5">
 
         <!-- Peta dan Info Kontak -->
         <div class="row mb-5">
@@ -72,6 +71,7 @@
             <!-- Peta -->
             <div class="col-md-7 mb-4 mb-lg-0">
                 <div class="map-container rounded overflow-hidden shadow-sm">
+
                     <!-- google maps nya -->
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4366.31954873799!2d111.53478297500345!3d-7.639779492376133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e79bfb03beb471b%3A0x16a030768cf7afc!2sRENEO%20LAUNDRY!5e1!3m2!1sen!2sid!4v1745205459695!5m2!1sen!2sid"
@@ -81,7 +81,7 @@
             </div>
 
             <!-- Kontak -->
-            <div class="col-log-5">
+            <div class="col-lg-5">
                 <div class="contact-info bg-light p-4 rounded shadow-sm h-100">
                     <h2 class="h4 mb-4">Informasi Kontak</h2>
                     <p class="mb-3"><strong>Alamat:</strong> Perum Bumi Mas 1 Blk. H No.11 Mojorejo, Kec.
@@ -92,7 +92,7 @@
                     <p class="mb-3"><strong>Telepon:</strong> 085837043478</p>
                     <p class="mb-4"><strong>Instagram:</strong> @reneolaundry</p>
                     <div class="mt-4">
-                        <a href="wa.me/6285837043478" class="social-icon"><img
+                        <a href="wa.me/6285837043478" class="social-icon" class="btn btn-outline-danger"><img
                                 src="<?php echo base_url('public/assets/brand-whatsapp.svg'); ?>"
                                 alt="WhatsApp Icon"></a>
                         <a href="instagram.com/reneolaundry" class="social-icon"><img
@@ -108,7 +108,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
     </script>
-
     <!-- Inisialisasi peta Leaflet
     <script>
         var map = L.map('map').setView([-7.59703, 110.82317], 15); // Contoh: Koordinat Solo, ganti dengan Madiun
