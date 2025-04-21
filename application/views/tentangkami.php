@@ -64,13 +64,14 @@
         </div>
     </div>
 
-    <!-- Peta dan Info Kontak -->
-    <section>
-        <div class="row align-items-start">
+    <div class="container py-5">
+        <!-- Peta dan Info Kontak -->
+        <div class="row mb-5">
 
             <!-- Peta -->
-            <div class="col-md-6 mb-4 mb-md-0">
-                <div id="map">
+            <div class="col-md-7 mb-4 mb-lg-0">
+                <div class="map-container rounded overflow-hidden shadow-sm">
+                    <!-- google maps nya -->
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4366.31954873799!2d111.53478297500345!3d-7.639779492376133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e79bfb03beb471b%3A0x16a030768cf7afc!2sRENEO%20LAUNDRY!5e1!3m2!1sen!2sid!4v1745205459695!5m2!1sen!2sid"
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -79,9 +80,9 @@
             </div>
 
             <!-- Kontak -->
-            <div class="col-md-6">
-                <div class="contact-info">
-                    <h2 class="h5 mb-3">Informasi Kontak</h2>
+            <div class="col-log-5">
+                <div class="contact-info bg-light p-4 rounded shadow-sm h-100">
+                    <h2 class="h4 mb-4">Informasi Kontak</h2>
                     <p class="mb-3"><strong>Alamat:</strong> Perum Bumi Mas 1 Blk. H No.11 Mojorejo, Kec.
                         Taman,
                         Kota Madiun,
@@ -89,7 +90,7 @@
                         Timur 63139</p>
                     <p class="mb-3"><strong>Telepon:</strong> 085837043478</p>
                     <p class="mb-4"><strong>Instagram:</strong> @reneolaundry</p>
-                    <div class="sosial-icon">
+                    <div class="mt-4">
                         <a href="wa.me/6285837043478" class="social-icon"><img
                                 src="<?php echo base_url('public/assets/brand-whatsapp.svg'); ?>"
                                 alt="WhatsApp Icon"></a>
@@ -100,14 +101,12 @@
                 </div>
             </div>
         </div>
-    </section>
+
+        <!-- javascript default -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+        </script>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
-    </script>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-
     <!-- Inisialisasi peta Leaflet
     <script>
         var map = L.map('map').setView([-7.59703, 110.82317], 15); // Contoh: Koordinat Solo, ganti dengan Madiun
