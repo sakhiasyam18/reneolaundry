@@ -1,0 +1,21 @@
+/* Warna soft UI dan animasi hover */
+.soft-card {
+    background: #f7fbff;
+    border: 1px solid #e3f2fd;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+}
+
+.hover-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(33, 150, 243, 0.1);
+    background: #eaf6ff;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    border-color: #0d6efd;
+    outline: none;
+}

@@ -1,0 +1,447 @@
+/* 
+==============================================
+LAYANAN - RENEO LAUNDRY
+==============================================
+Deskripsi: CSS untuk halaman Layanan
+Author: [Nama Anda]
+Version: 1.0
+==============================================
+*/
+
+/* ===== VARIABEL WARNA ===== */
+:root {
+    --primary-color: #3498db;
+    /* Biru utama */
+    --secondary-color: #2980b9;
+    /* Biru sekunder lebih gelap */
+    --accent-color: #1e5799;
+    /* Biru aksen, lebih tua */
+    --light-blue: #e3f2fd;
+    /* Biru muda untuk background */
+    --light-blue-hover: #bbdefb;
+    /* Biru muda untuk hover */
+    --hover-blue: #2196f3;
+    /* Biru hover */
+    --text-dark: #333333;
+    /* Warna text utama */
+    --text-muted: #6c757d;
+    /* Warna text sekunder */
+    --light-bg: #f8f9fa;
+    /* Background muda */
+    --white: #ffffff;
+    /* Putih */
+    --shadow-color: rgba(52, 152, 219, 0.1);
+    /* Bayangan dengan warna biru */
+    --card-border: rgba(52, 152, 219, 0.2);
+    /* Border card */
+    --premium-gradient: linear-gradient(135deg, #2193b0, #6dd5ed);
+    /* Gradient untuk premium */
+}
+
+/* ===== STYLE UMUM ===== */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-dark);
+    background-color: var(--white);
+    line-height: 1.6;
+}
+
+/* Logo Background */
+.page-wrapper {
+    position: relative;
+    overflow: hidden;
+    padding: 30px 0;
+    background-color: var(--white);
+}
+
+.page-wrapper::before {
+    content: '';
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 800px;
+    background-image: url('<?php echo base_url("public/assets/logo.png"); ?>');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.03;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* ===== JUDUL HALAMAN ===== */
+.section-title {
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.page-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.text-blue {
+    color: var(--accent-color);
+}
+
+.title-underline {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+.subtitle {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ===== SECTION HEADER ===== */
+.section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.section-header h2 {
+    position: relative;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+.section-line {
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(to right, var(--light-blue), transparent);
+    margin-left: 15px;
+}
+
+/* ===== JENIS LAYANAN ICONS ===== */
+.services-container {
+    margin: 40px 0;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: var(--light-bg);
+    box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+.service-icon-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    width: 150px;
+    cursor: pointer;
+    background-color: var(--white);
+    box-shadow: 0 3px 10px var(--shadow-color);
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px var(--shadow-color);
+    background-color: var(--light-blue-hover);
+}
+
+.service-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(to right bottom, var(--primary-color), var(--secondary-color));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    box-shadow: 0 5px 15px rgba(33, 150, 243, 0.3);
+    transition: all 0.3s ease;
+}
+
+.service-item:hover .service-icon {
+    transform: scale(1.1);
+}
+
+.service-icon i {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.service-item h5 {
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-align: center;
+    color: var(--text-dark);
+}
+
+/* ===== PRICE CARDS ===== */
+.price-card {
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid var(--card-border);
+    transition: all 0.3s ease;
+    background-color: var(--white);
+    box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+.price-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 30px var(--shadow-color);
+}
+
+.price-header {
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    color: white;
+    position: relative;
+}
+
+.premium-card .price-header {
+    background: var(--premium-gradient);
+}
+
+.price-tag {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.duration {
+    font-size: 0.9rem;
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    margin-top: 5px;
+}
+
+.price-body {
+    padding: 20px;
+}
+
+.price-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.price-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.price-list li:last-child {
+    border-bottom: none;
+}
+
+.price {
+    font-weight: 600;
+    color: var(--accent-color);
+}
+
+/* ===== TABLE CARD ===== */
+.table-card {
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid var(--card-border);
+    transition: all 0.3s ease;
+    background-color: var(--white);
+    box-shadow: 0 5px 15px var(--shadow-color);
+    height: 100%;
+}
+
+.table-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px var(--shadow-color);
+}
+
+.table-header {
+    padding: 15px 20px;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    color: white;
+}
+
+.table-header h3 {
+    margin: 0;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.table-body {
+    padding: 10px;
+}
+
+.price-table {
+    margin: 0;
+}
+
+.price-table td {
+    padding: 12px 15px;
+    font-size: 0.95rem;
+}
+
+.price-table tr:hover {
+    background-color: var(--light-blue);
+}
+
+.price-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* ===== CTA SECTION ===== */
+.cta-section {
+    background: linear-gradient(45deg, var(--light-blue), var(--white));
+    border-radius: 15px;
+    padding: 40px 20px;
+    margin-top: 50px;
+    box-shadow: 0 10px 30px var(--shadow-color);
+}
+
+.cta-section h3 {
+    font-weight: 600;
+    color: var(--accent-color);
+}
+
+.cta-section p {
+    color: var(--text-muted);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta-btn {
+    background: linear-gradient(to right, #25D366, #128C7E);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-weight: 500;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+}
+
+.cta-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+    color: white;
+}
+
+/* ===== RESPONSIVE STYLES ===== */
+@media (max-width: 991.98px) {
+    .service-icon-container {
+        gap: 15px;
+    }
+
+    .service-item {
+        width: 130px;
+    }
+}
+
+@media (max-width: a) {
+    .page-title {
+        font-size: 2rem;
+    }
+
+    .service-icon-container {
+        gap: 10px;
+        justify-content: space-around;
+    }
+
+    .service-item {
+        width: 120px;
+        padding: 10px;
+    }
+
+    .service-icon {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .page-title {
+        font-size: 1.8rem;
+    }
+
+    .service-item {
+        width: 45%;
+        margin-bottom: 15px;
+    }
+
+    .cta-section {
+        padding: 30px 15px;
+    }
+}
+
+/* ===== ANIMATION ENHANCEMENTS ===== */
+/* Hover efek untuk kartu */
+.price-card,
+.table-card {
+    backface-visibility: hidden;
+}
+
+/* Smooth transitions */
+a,
+button,
+.service-item,
+.price-card,
+.table-card {
+    transition: all 0.3s ease;
+}
+
+/* Pulse animation for CTA */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.cta-btn {
+    animation: pulse 2s infinite;
+}
+
+/* Breathing animation for service icons */
+@keyframes breathing {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.service-icon {
+    animation: breathing 3s infinite ease-in-out;
+}
