@@ -118,108 +118,116 @@
 
             <!-- ekononis 3 hari -->
             <div class="col-md-6 col-lg-3 mb-4">
-                <div class="card-header bg-primary text-white">
-                    <h5 class="mb-0">Ekonomis</h5>
-                    <span class="badge bg-light text-dark">3 hari</span>
+                <div class="card h-100 shadow-sm">
+                    <h2 class="card-header text-center text-white bg-black fw-bold">Ekonomis</h2>
+                    <h2 class="bg-light text-center">3 hari</h2>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <span>Cuci Setrika</span>
+                                <span>Rp 4.000,-/kg</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <span>Cuci Kering</span>
+                                <span>Rp 3.500,-/kg</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <span>Cuci Basah</span>
+                                <span>Rp 3.000,-/kg</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <span>Setrika</span>
+                                <span>Rp 3.000,-/kg</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="card-body">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-grup-item d-flex justify-content-betweeen align-items-center">
-                            <span>Cuci Setrika</span>
-                            <span>Rp 4.000,-/kg</span>
-                        </li>
-                        <li class="list-grup-item d-flex justify-content-betweeen align-items-center">
-                            <span>Cuci Kering</span>
-                            <span>Rp 3.500,-/kg</span>
-                        </li>
-                        <li class="list-grup-item d-flex justify-content-betweeen align-items-center">
-                            <span>Cuci Basah</span>
-                            <span>Rp 3.000,-/kg</span>
-                        </li>
-                        <li class="list-grup-item d-flex justify-content-betweeen align-items-center">
-                            <span>Setrika</span>
-                            <span>Rp 3.000,-/kg</span>
-                        </li>
-                    </ul>
+            </div>
+
+            <!-- Reguler Card -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <h2 class="card-header text-center bg-black text-white fw-bold">Reguler</h2>
+                    <h2 class="bg-light text-center">2 Hari</h2>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <span>Cuci Setrika</span>
+                                <span>Rp 5.000/kg</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <span>Cuci Kering</span>
+                                <spa>Rp 4.500/kg</spa>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <span>Cuci Basah</span>
+                                <span>Rp 4.000/kg</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <span>Setrika</span>
+                                <span>Rp 4.000/kg</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- reguler 2 hari -->
-        <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
-            <div class="card-header">3 Hari</div>
-            <div class="card-body">
-                <h5 class="card-title">Ekonomis</h5>
-                <ul>
-                    <li>
-                        <span>Cuci Setrika</span>
-                        <span>Rp 5.000,-/kg</span>
-                    </li>
-                    <li>
-                        <span>Cuci Kering</span>
-                        <span>Rp 4.500,-/kg</span>
-                    </li>
-                    <li>
-                        <span>Cuci Basah</span>
-                        <span>Rp 4.000,-/kg</span>
-                    </li>
-                    <li>
-                        <span>Setrika</span>
-                        <span>Rp 4.000,-/kg</span>
-                    </li>
-                </ul>
+            <!-- besok jadi 1 hari -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <h2 class="card-header text-center bg-black text-white fw-bold">Besok Jadi</h2>
+                    <h2 class=" text-center bg-light text-dark">1 hari</h2>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-item-center">
+                                <span>Cuci
+                                    Setrika</span>
+                                <span>Rp 6.000,-/kg</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-item-center">
+                                <span>Cuci Kering</span>
+                                <span>Rp 5.500,-/kg</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-item-center">
+                                <span>Cuci Basah</span>
+                                <span>Rp 5.000,-/kg</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-item-center">
+                                <span>Setrika</span>
+                                <span>Rp 5.000,-/kg</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <!-- besok jadi 1 hari -->
-        <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
-            <div class="card-header">1 Hari</div>
-            <div class="card-body">
-                <h5 class="card-title">Besok jadi</h5>
-                <ul>
-                    <li>
-                        <span>Cuci Setrika</span>
-                        <span>Rp 6.000,-/kg</span>
-                    </li>
-                    <li>
-                        <span>Cuci Kering</span>
-                        <span>Rp 5.500,-/kg</span>
-                    </li>
-                    <li>
-                        <span>Cuci Basah</span>
-                        <span>Rp 5.000,-/kg</span>
-                    </li>
-                    <li>
-                        <span>Setrika</span>
-                        <span>Rp 5.000,-/kg</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
 
-        <!-- ekspress 6 jam -->
-        <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
-            <div class="card-header">6 Jam</div>
-            <div class="card-body">
-                <h5 class="card-title">Ekspres</h5>
-                <ul>
-                    <li>
-                        <span>Cuci Setrika</span>
-                        <span>Rp8.000,-/kg</span>
-                    </li>
-                    <li>
-                        <span>Cuci Kering</span>
-                        <span>Rp 7.500,-/kg</span>
-                    </li>
-                    <li>
-                        <span>Cuci Basah</span>
-                        <span>Rp 7.000,-/kg</span>
-                    </li>
-                    <li>
-                        <span>Setrika</span>
-                        <span>Rp 7.000,-/kg</span>
-                    </li>
-                </ul>
+            <!-- ekspress 6 jam -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <h2 class="card-header fw-bold text-center bg-black text-white">Ekspres</h2>
+                    <h2 class="text-center bg-light text-dark">6 Jam</h2>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item align-text-justify d-flex justify-content-between">
+                                <span>Cuci Setrika</span>
+                                <span>Rp8.000,-/kg</span>
+                            </li>
+                            <li class="list-group-item align-text-justify d-flex justify-content-between">
+                                <span>Cuci Kering</span>
+                                <span>Rp 7.500,-/kg</span>
+                            </li>
+                            <li class="list-group-item align-text-justify d-flex justify-content-between">
+                                <span>Cuci Basah</span>
+                                <span>Rp 7.000,-/kg</span>
+                            </li>
+                            <li class="list-group-item align-text-justify d-flex justify-content-between">
+                                <span>Setrika</span>
+                                <span>Rp 7.000,-/kg</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
