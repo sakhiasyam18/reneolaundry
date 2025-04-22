@@ -22,12 +22,30 @@
 
     <!-- AOS Animation Library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <style>
+        /* Watermark logo styling */
+        .background-watermark {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('<?= base_url('public/assets/logo-reneo-laundry.png') ?>');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 50%;
+            opacity: 0.05;
+            pointer-events: none;
+            z-index: -1;
+        }
+    </style>
 </head>
 
 <body>
     <!-- Wrapper dengan Logo Background -->
     <div class="page-wrapper">
         <!-- Container Utama -->
+        <div class="background-watermark"></div>
         <div class="container py-5">
 
             <!-- Judul Halaman -->
@@ -180,14 +198,14 @@
 
     <!-- Custom JS -->
     <script>
-    // Inisialisasi animasi AOS
-    document.addEventListener('DOMContentLoaded', function() {
-        AOS.init({
-            duration: 800,
-            easing: 'ease-in-out',
-            once: true
+        // Inisialisasi animasi AOS
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true
+            });
         });
-    });
     </script>
 </body>
 

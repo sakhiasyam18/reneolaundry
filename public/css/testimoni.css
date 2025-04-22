@@ -1,21 +1,179 @@
-/* Warna soft UI dan animasi hover */
+/* Testimoni Custom CSS */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Card styling */
 .soft-card {
-    background: #f7fbff;
-    border: 1px solid #e3f2fd;
-    border-radius: 16px;
+    border-radius: 15px;
+    border: none;
     transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.hover-card {
+    transform: translateY(0);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .hover-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 20px rgba(33, 150, 243, 0.1);
-    background: #eaf6ff;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-textarea:focus,
-input:focus,
-select:focus {
-    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+/* Form styling */
+.form-control,
+.form-select {
+    border-radius: 10px;
+    padding: 12px 15px;
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.15);
     border-color: #0d6efd;
-    outline: none;
+}
+
+textarea.form-control {
+    min-height: 100px;
+}
+
+/* Button styling */
+.btn-primary {
+    border-radius: 10px;
+    padding: 12px 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    background: linear-gradient(135deg, #0d6efd, #0099ff);
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(13, 110, 253, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(13, 110, 253, 0.4);
+    background: linear-gradient(135deg, #0958cc, #007acc);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+/* Testimoni list styling */
+.testimoni-list {
+    margin-top: 40px;
+}
+
+.testimoni-list .card {
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Delay animation for testimoni cards */
+.testimoni-list .card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.testimoni-list .card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.testimoni-list .card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.testimoni-list .card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.testimoni-list .card:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+/* Rating stars */
+.text-warning {
+    color: #FFD700 !important;
+}
+
+/* Page header */
+.page-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.page-header h2 {
+    color: #333;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.page-header h2:after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 4px;
+    background: linear-gradient(90deg, #0d6efd, #0099ff);
+    bottom: 0;
+    left: 25%;
+    border-radius: 2px;
+}
+
+/* Form card highlight effect */
+.input-highlight {
+    position: relative;
+    overflow: hidden;
+}
+
+.input-highlight:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: linear-gradient(135deg, #0d6efd, #00c3ff);
+    z-index: -1;
+    transform: scale(0.98);
+    filter: blur(20px);
+    opacity: 0;
+    transition: all 0.5s ease;
+    border-radius: 20px;
+}
+
+.soft-card:hover .input-highlight:before {
+    opacity: 0.15;
+    transform: scale(1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .form-control,
+    .form-select,
+    .btn {
+        font-size: 14px;
+    }
 }
