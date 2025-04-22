@@ -6,10 +6,7 @@ class tentangkami extends CI_Controller
 
     public function index()
     {
-        // Memuat view home.php
+        $this->load->helper('url'); // Tambahin ini
         $this->load->view('tentangkami');
-
-        //helper url 
-        $this->load->helper('url');
     }
 }
