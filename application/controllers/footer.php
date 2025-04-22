@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
-class layanan extends CI_Controller
+class footer extends CI_Controller
 {
     public function __construct()
     {
@@ -10,8 +10,6 @@ class layanan extends CI_Controller
 
     public function index()
     {
-        $this->load->view('templates/header');
-        $this->load->view('layanan');
         $this->load->view('templates/footer');
     }
 }

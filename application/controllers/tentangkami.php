@@ -8,5 +8,6 @@ class tentangkami extends CI_Controller
     {
         $this->load->helper('url'); // Tambahin ini
         $this->load->view('tentangkami');
+        $this->load->view('template/footer');
     }
 }

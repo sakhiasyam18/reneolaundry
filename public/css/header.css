@@ -1,0 +1,59 @@
+/* File: assets/css/style.css */
+
+/* Styling untuk footer */
+footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+}
+
+footer h5 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+footer .nav-link {
+    padding-left: 0;
+}
+
+footer .border-top {
+    border-top-color: #dee2e6 !important;
+}
+
+/* CSS untuk kontak form */
+.contact-form-section {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0;
+    border: 1px solid #ccc;
+}
+
+.contact-form-section h1 {
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-control {
+    border-radius: 0;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+textarea.form-control {
+    min-height: 120px;
+}
+
+.btn-send {
+    background-color: #4b93e6;
+    color: white;
+    border-radius: 0;
+    padding: 0.5rem 2rem;
+    font-size: 0.9rem;
+    border: none;
+}
+
+.contact-info-section {
+    background-color: #c2d5e3;
+    padding: 2rem;
+    color: #333;
+}
