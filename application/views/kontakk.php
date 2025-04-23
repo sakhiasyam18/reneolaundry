@@ -36,8 +36,8 @@
     <!-- Header Section -->
     <div class="header-section text-center animate-fade-in">
         <div class="container py-5">
-            <h1 class="display-4 text-black fw-bold">Hubungi ReneoLaundry</h1>
-            <p class="lead text-black">Kami siap melayani kebutuhan laundry Anda dengan profesional</p>
+            <h1 class="display-4 text-black fw-bold">Layanan Laundry Terbaik Ada di Sini!</h1>
+            <p class="lead text-black"> Kami siap layani kamu dengan profesional, dari cuci harian sampai ekspres.</p>
         </div>
     </div>
 
@@ -46,7 +46,8 @@
         <div class="row justify-content-center mb-5">
             <div class="col-lg-8">
                 <div class="contact-form animate-slide-up">
-                    <h2 class="text-center mb-4 text-primary">Info menarik lowongan kerja juga bisa</h2>
+                    <h2 class="text-center mb-4 text-primary"> Tertarik gabung tim ReneoLaundry? Langsung hubungi kami
+                        untuk info lowongan!</h2>
                     <form id="whatsappForm">
                         <div class="row mb-3">
                             <div class="col-md-6 mb-3 mb-md-0">

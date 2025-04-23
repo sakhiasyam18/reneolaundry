@@ -18,34 +18,16 @@
         rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="<?php echo base_url('public/css/tentangkami.css'); ?>" />
+    <link rel="stylesheet" href="<?= base_url('assets/css/tentanggkami.css') ?>">
 
     <!-- AOS Animation Library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-    <style>
-        /* Watermark logo styling */
-        .background-watermark {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url('<?= base_url('public/assets/logo-reneo-laundry.png') ?>');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: 50%;
-            opacity: 0.05;
-            pointer-events: none;
-            z-index: -1;
-        }
-    </style>
 </head>
 
 <body>
     <!-- Wrapper dengan Logo Background -->
     <div class="page-wrapper">
         <!-- Container Utama -->
-        <div class="background-watermark"></div>
         <div class="container py-5">
 
             <!-- Judul Halaman -->
@@ -102,7 +84,7 @@
                         <!-- Gambar -->
                         <div class="col-lg-6 ps-lg-4">
                             <div class="about-image-container">
-                                <img src="<?php echo base_url('public/assets/depan.png'); ?>" alt="Gedung ReneoLaundry"
+                                <img src="<?php echo base_url('/assets/images/depan.png'); ?>" alt="Gedung ReneoLaundry"
                                     class="img-fluid rounded-3 about-image">
                                 <div class="image-badge">
                                     Sejak 2018
@@ -198,14 +180,14 @@
 
     <!-- Custom JS -->
     <script>
-        // Inisialisasi animasi AOS
-        document.addEventListener('DOMContentLoaded', function() {
-            AOS.init({
-                duration: 800,
-                easing: 'ease-in-out',
-                once: true
-            });
+    // Inisialisasi animasi AOS
+    document.addEventListener('DOMContentLoaded', function() {
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
         });
+    });
     </script>
 </body>
 

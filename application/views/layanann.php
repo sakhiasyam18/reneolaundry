@@ -18,27 +18,10 @@
         rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="<?php echo base_url('public/css/layanan.css'); ?>" />
+    <link rel="stylesheet" href="<?= base_url('assets/css/layananann.css') ?>">
 
     <!-- AOS Animation Library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-    <style>
-        /* Watermark logo styling */
-        .background-watermark {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url('<?= base_url('public/assets/logo-reneo-laundry.png') ?>');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: 50%;
-            opacity: 0.05;
-            pointer-events: none;
-            z-index: -1;
-        }
-    </style>
 </head>
 
 <body>
@@ -356,7 +339,7 @@
             </div>
 
             <!-- CTA Section -->
-            <div class="row mb-5" data-aos="fade-up">
+            <!-- <div class="row mb-5" data-aos="fade-up">
                 <div class="col-12">
                     <div class="cta-section text-center">
                         <h3 class="mb-3">Butuh Layanan Laundry?</h3>
@@ -366,7 +349,7 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 
@@ -381,22 +364,22 @@
 
     <!-- Custom JS -->
     <script>
-        // Inisialisasi animasi AOS
-        document.addEventListener('DOMContentLoaded', function() {
-            AOS.init({
-                duration: 800,
-                easing: 'ease-in-out',
-                once: true
-            });
-
-            // Menambahkan class FA untuk icon setrika yang tidak ada di standard FA
-            // Menggunakan kelas custom untuk icon setrika
-            var ironIcon = document.querySelectorAll('.fas.fa-iron');
-            ironIcon.forEach(function(icon) {
-                icon.classList.remove('fa-iron');
-                icon.classList.add('fa-temperature-high'); // Alternativ icon
-            });
+    // Inisialisasi animasi AOS
+    document.addEventListener('DOMContentLoaded', function() {
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
         });
+
+        // Menambahkan class FA untuk icon setrika yang tidak ada di standard FA
+        // Menggunakan kelas custom untuk icon setrika
+        var ironIcon = document.querySelectorAll('.fas.fa-iron');
+        ironIcon.forEach(function(icon) {
+            icon.classList.remove('fa-iron');
+            icon.classList.add('fa-temperature-high'); // Alternativ icon
+        });
+    });
     </script>
 </body>
 
