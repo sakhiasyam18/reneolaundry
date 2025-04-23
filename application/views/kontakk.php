@@ -11,9 +11,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Animate.css untuk animasi -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link href="<?= base_url('assets/css/kontakk.css') ?>" rel="stylesheet">
-    <!-- khusus agar gambar baground nya bisa dapat -->
     <style>
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        color: #1a202c;
+        /* Warna judul lebih gelap */
+        line-height: 1.3;
+    }
+
+    .lead {
+        font-size: 1.1rem;
+        font-weight: 400;
+        color: #4a5568;
+    }
+
+    /* Background Watermark*/
     .background-watermark {
         position: fixed;
         top: 0;
@@ -30,13 +52,13 @@
     </style>
 </head>
 
-<body style="background: transparent;">
+<body>
     <div class="background-watermark"></div>
     <!-- Header Section -->
     <div class="header-section text-center animate-fade-in">
         <div class="container py-5">
-            <h1 class="display-4 text-black fw-bold">Layanan Laundry Terbaik Ada di Sini!</h1>
-            <p class="lead text-black"> Kami siap layani kamu dengan profesional, dari cuci harian sampai ekspres.</p>
+            <h1 class="display-4 fw-bold">Layanan Laundry Terbaik Ada di Sini!</h1>
+            <p class="lead">Kami siap layani kamu dengan profesional, dari cuci harian sampai ekspres.</p>
         </div>
     </div>
 
@@ -45,7 +67,7 @@
         <div class="row justify-content-center mb-5">
             <div class="col-lg-8">
                 <div class="contact-form animate-slide-up">
-                    <h2 class="text-center mb-4 text-primary"> Tertarik gabung tim ReneoLaundry? Langsung hubungi kami
+                    <h2 class="text-center mb-4 text-primary">Tertarik gabung tim ReneoLaundry? Langsung hubungi kami
                         untuk info lowongan!</h2>
                     <form id="whatsappForm">
                         <div class="row mb-3">
