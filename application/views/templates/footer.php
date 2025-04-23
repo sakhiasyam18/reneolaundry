@@ -21,10 +21,10 @@
             </div>
             <div class="row border-top pt-3 mt-3">
                 <div class="col-md-12 d-flex justify-content-between align-items-center">
-                    <p class="text-muted mb-0">© 2023 ReneoLaundry, Inc.</p>
+                    <p class="text-muted mb-0">© 2023 ReneoLaundry</p>
                     <div>
-                        <a href="#" class="text-muted text-decoration-none me-3">Kebijakan Privasi</a>
-                        <a href="#" class="text-muted text-decoration-none">Syarat & Ketentuan</a>
+                        <a href="#" class="text-muted text-decoration-none me-3"></a>
+                        <a href="#" class="text-muted text-decoration-none"></a>
                     </div>
                 </div>
             </div>

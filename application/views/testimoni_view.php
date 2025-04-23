@@ -16,9 +16,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- Custom CSS -->
     <link href="<?= base_url('assets/css/testimoni.css') ?>" rel="stylesheet">
+
+    <!-- buat baground agar transparan -->
+    <style>
+    .background-watermark {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('<?php echo base_url("assets/images/logo-reneo-laundry.png"); ?>');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        opacity: 0.1;
+        z-index: -1;
+    }
+    </style>
 </head>
 
 <body>
+    <div class="background-watermark"></div>
+
     <div class="container py-5">
         <div class="page-header text-center animate__animated animate__fadeIn">
             <h2 class="mb-2">Testimoni Pelanggan</h2>

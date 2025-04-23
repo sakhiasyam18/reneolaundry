@@ -6,6 +6,7 @@ class tentanggkami extends CI_Controller
 
     public function index()
     {
+        $this->load->view('templates/header');
         $this->load->helper('url'); // Tambahin ini
         $this->load->view('tentanggkami');
         $this->load->view('templates/footer');

@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <div class="background-watermark"></div>
     <div class="container py-5">
 
         <!-- bagian title -->

@@ -22,11 +22,29 @@
 
     <!-- AOS Animation Library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+    <style>
+    .background-watermark {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('<?php echo base_url("assets/images/logo-reneo-laundry.png"); ?>');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        opacity: 0.1;
+        z-index: -1;
+    }
+    </style>
 </head>
 
 <body>
+    <div class="background-watermark"></div>
+
     <!-- Wrapper dengan Logo Background -->
-    <div class="page-wrapper">
+    <div class="">
         <!-- Container Utama -->
         <div class="container py-5">
 

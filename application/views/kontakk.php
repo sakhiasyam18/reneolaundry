@@ -12,26 +12,25 @@
     <!-- Animate.css untuk animasi -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link href="<?= base_url('assets/css/kontakk.css') ?>" rel="stylesheet">
+    <!-- khusus agar gambar baground nya bisa dapat -->
     <style>
-    /* Watermark logo styling */
     .background-watermark {
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: url('<?= base_url('public/assets/logo-reneo-laundry.png') ?>');
+        background-image: url('<?php echo base_url("assets/images/logo-reneo-laundry.png"); ?>');
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 50%;
-        opacity: 0.05;
-        pointer-events: none;
+        background-size: contain;
+        opacity: 0.1;
         z-index: -1;
     }
     </style>
 </head>
 
-<body>
+<body style="background: transparent;">
     <div class="background-watermark"></div>
     <!-- Header Section -->
     <div class="header-section text-center animate-fade-in">

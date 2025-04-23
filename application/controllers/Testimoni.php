@@ -19,6 +19,7 @@ class Testimoni extends CI_Controller
             // Jika tidak ada created_at, urutkan berdasarkan ID (terbaru di atas)
             $this->db->order_by('id', 'DESC');
         }
+        $this->load->view('templates/header');
 
         $query = $this->db->get('testimoni');
         $data['testimoni'] = $query->result();

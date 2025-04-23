@@ -22,11 +22,29 @@
 
     <!-- AOS Animation Library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+    <!-- buat baground agar transparan -->
+    <style>
+    .background-watermark {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('<?php echo base_url("assets/images/logo-reneo-laundry.png"); ?>');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        opacity: 0.1;
+        z-index: -1;
+    }
+    </style>
 </head>
 
-<body>
+<body style="background: transparent;">
+    <div class="background-watermark"></div>
     <!-- Wrapper dengan Logo Background -->
-    <div class="page-wrapper">
+    <div class="">
         <!-- Container Utama -->
         <div class="container py-5">
 
@@ -47,7 +65,7 @@
             <!-- Jenis Layanan -->
             <div class="row mb-5" data-aos="fade-up">
                 <div class="col-12 text-center">
-                    <div class="services-container">
+                    <div class="">
                         <div class="service-icon-container">
                             <div class="service-item" data-aos="zoom-in" data-aos-delay="100">
                                 <div class="service-icon">
