@@ -1,71 +1,66 @@
-###################
-What is CodeIgniter
-###################
+# reneolaundry
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+    # Laundry Gen Z
 
-*******************
-Release Information
-*******************
+**Laundry Gen Z** adalah platform laundry online yang dibangun menggunakan **CodeIgniter 3**.
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+## Prasyarat
 
-**************************
-Changelog and New Features
-**************************
+Sebelum memulai, pastikan kamu sudah menginstal beberapa hal berikut:
 
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
+## Langkah-langkah Setup
 
-*******************
-Server Requirements
-*******************
+Ikuti langkah-langkah berikut untuk memulai project ini: dibagian index.php rubah aja menjadi production bukan development
+ * This can be set to anything, but default usage is:
+ *
+ *     development
+ *     testing
+ *     production
+ *
+ * NOTE: If you change these, also change the error_reporting() code below
+ */
+define('ENVIRONMENT', 'production');
+itu tujuan nya agar tidak muncul eror karena ci 3 hanya bisa diakses di php tingkat bawah bukan atas makanya harus dihilangin notif eror nya biar nggak menggangu 
 
-PHP version 5.6 or newer is recommended.
+### 1. Clone Repo
 
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
+Clone repository ke komputer kamu dengan perintah:
 
-************
-Installation
-************
+```bash
+git clone https://github.com/sakhiasyam18/reneolaundry-v2.git
 
-Please see the `installation section <https://codeigniter.com/userguide3/installation/index.html>`_
-of the CodeIgniter User Guide.
+Masuk ke folder project:
+cd reneolaundry
 
-*******
-License
-*******
+2. Set up Database (ini semua nya bebas ingin ngikutin atau bikin sendiri di pc kalian)
 
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
+    Buat database di MySQL dengan nama reneolaundry (atau nama lain sesuai konfigurasi).
 
-*********
-Resources
-*********
+    Import file SQL yang sudah disiapkan (bisa buat file .sql untuk tabel yang dibutuhkan).
 
--  `User Guide <https://codeigniter.com/docs>`_
--  `Contributing Guide <https://github.com/bcit-ci/CodeIgniter/blob/develop/contributing.md>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
+        Jangan lupa untuk sesuaikan dengan file konfigurasi database. 
 
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
+3. Konfigurasi Database
 
-***************
-Acknowledgement
-***************
+    Buka file application/config/database.php.
 
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+    Sesuaikan pengaturan database sesuai dengan environment lokal kamu (host, username, password, dll).
+$db['default'] = array(
+    'dsn'   => '',
+    'hostname' => 'localhost',
+    'username' => 'root',
+    'password' => '',
+    'database' => 'reneolaundryy', //aku saranin ini aja sih database nya biar enak
+    'dbdriver' => 'mysqli',
+    // sesuaikan lainnya...
+);
+
+5. Menjalankan Server
+
+Jika kamu menggunakan XAMPP/WAMP, pastikan Apache dan MySQL sudah berjalan. Kemudian, buka project ini di browser dengan URL:
+http://localhost/reneolaundry
+http://localhost/reneolaundry/layanann
+http://localhost/reneolaundry/kontakk
+http://localhost/reneolaundry/tentanggkami
+http://localhost/reneolaundry/testimoni
+
