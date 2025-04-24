@@ -9,13 +9,12 @@
                 </div>
                 <div class="col-md-6 mb-3 text-md-end">
                     <ul class="list-unstyled d-flex justify-content-md-end">
-                        <li class="ms-3"><a class="text-muted" href="wa.me/6285837043478"><i
-                                    class="bi bi-whatsapp"></i></a></li>
+                        <li class="ms-3"><a class="text-muted" href="https://wa.me/6285736658148" target="_blank"
+                                rel="noopener noreferrer"><i class="bi bi-whatsapp"></i></a></li>
                         <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/laundryonlinemadiun/"><i
                                     class="bi bi-instagram"></i></a></li>
-                        <li class="ms-3"><a class="text-muted"
-                                href="https://www.facebook.com/KomunitasLaundryMadiun/?locale=id_ID"><i
-                                    class="bi bi-facebook"></i></a></li>
+                        <li class="ms-3"><a class="text-muted" href="https://maps.app.goo.gl/GhsLHjyYm2hvmEVr7"><i
+                                    class="bi bi-geo-alt"></i></a></li>
                     </ul>
                 </div>
             </div>

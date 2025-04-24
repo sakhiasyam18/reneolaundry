@@ -140,8 +140,8 @@
                         </div>
                         <h4 class="mb-3 text-primary">Instagram</h4>
                         <p>Ikuti kami di Instagram untuk mendapatkan update terbaru dan promo menarik!</p>
-                        <a href="https://www.instagram.com/reneolaundry" class="btn btn-outline-primary mt-2">
-                            <i class="fab fa-instagram me-2"></i>@reneolaundry
+                        <a href="https://www.instagram.com/laundryonlinemadiun" class="btn btn-outline-primary mt-2">
+                            <i class="fab fa-instagram me-2"></i>@laundryonlinemadiun
                         </a>
                     </div>
                 </div>
@@ -153,8 +153,8 @@
                         </div>
                         <h4 class="mb-3 text-primary">WhatsApp</h4>
                         <p>Hubungi kami langsung untuk layanan cepat dan informasi lebih lanjut.</p>
-                        <a href="https://wa.me/62895397104878" class="btn btn-outline-primary mt-2">
-                            <i class="fab fa-whatsapp me-2"></i>0895397104878
+                        <a href="https://wa.me/6285736658148" class="btn btn-outline-primary mt-2">
+                            <i class="fab fa-whatsapp me-2"></i>6285736658148
                         </a>
                     </div>
                 </div>
@@ -188,7 +188,7 @@
         const encodedMessage = encodeURIComponent(whatsappMessage);
 
         // WhatsApp phone number (Indonesian format)
-        const phoneNumber = '62895397104878';
+        const phoneNumber = '6285736658148';
 
         // Create WhatsApp URL
         const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;

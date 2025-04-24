@@ -40,7 +40,6 @@
         font-size: 1.1rem;
     }
     </style>
-    <title>Simple Header</title>
 </head>
 
 <body>

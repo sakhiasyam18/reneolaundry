@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tentang Kami - ReneoLaundry</title>
+    <title><?= isset($title) ? $title : 'Tentang Kami'; ?></title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -150,7 +150,7 @@
                                 </div>
                                 <div class="info-text">
                                     <h5>Telepon</h5>
-                                    <p><a href="tel:+6285837043478" class="contact-link">085837043478</a></p>
+                                    <p><a href="https://wa.me/6285736658148" class="contact-link">085736658148</a></p>
                                 </div>
                             </div>
                             <div class="contact-item">
@@ -159,7 +159,7 @@
                                 </div>
                                 <div class="info-text">
                                     <h5>Instagram</h5>
-                                    <p><a href="https://instagram.com/reneolaundry"
+                                    <p><a href="https://instagram.com/laundryonlinemadiun"
                                             class="contact-link">@reneolaundry</a></p>
                                 </div>
                             </div>
@@ -168,12 +168,12 @@
                             <div class="social-links mt-4">
                                 <h5 class="mb-3">Hubungi Kami</h5>
                                 <div class="d-flex flex-wrap gap-2">
-                                    <a href="https://wa.me/6285837043478" class="social-btn whatsapp-btn"
+                                    <a href="https://wa.me/6285736658148" class="social-btn whatsapp-btn"
                                         title="WhatsApp">
                                         <i class="fab fa-whatsapp"></i>
                                         <span>WhatsApp</span>
                                     </a>
-                                    <a href="https://instagram.com/reneolaundry" class="social-btn instagram-btn"
+                                    <a href="https://instagram.com/laundryonlinemadiun" class="social-btn instagram-btn"
                                         title="Instagram">
                                         <i class="fab fa-instagram"></i>
                                         <span>Instagram</span>
