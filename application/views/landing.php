@@ -20,7 +20,7 @@
         <!-- navbar -->
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="logo navbar-brand d-flex align-items-center" href="#">
+                <a class="logo navbar-brand d-flex align-items-center" href="landing">
                     <img src="assets/images/logo-reneo-laundry.png" alt="Logo" width="60" class="me-2" />
                     RENEO LAUNDRY
                 </a>
@@ -53,7 +53,7 @@
             <div class="jumbotron">
                 <div class="row">
                     <div class="col">
-                        <h1 class="display-4 float-start">Baju Bersih <br />Tanpa Ribet, <br />Serahkan pada <br />Kami!
+                        <h1 class="display-4 float-start" style="font-weight: bold;">Baju Bersih <br />Tanpa Ribet, <br />Serahkan pada <br />Kami!
                             <br>
                             <p class="lead float-start">
                                 Solusi Laundry Cepat, Bersih,<br />
@@ -63,7 +63,7 @@
                     </div><br><br><br>
                     <div class="col">
                         <img src="<?php echo base_url('/assets/images/mesin_cuci.png'); ?>" class="img-fluid float-end"
-                            alt="mesin cuci" />
+                            alt="mesin cuci" width="700" />
                     </div>
                 </div>
             </div>
@@ -95,17 +95,16 @@
                         </p>
                     </h1>
                 </div>
-                <div class="iframe-container">
-                    <iframe src="<?= base_url('landing/biru'); ?>" frameborder="0" scrolling="no" id="iframeBiru"
-                        onload="resizeIframe(this)">
-                    </iframe>
-                </div>
+                <div class="col">
+                        <img src="<?php echo base_url('/assets/images/page2.png'); ?>" class="img-fluid float-end"
+                            alt="orang page 2" width="600" />
+                    </div>
                 <div class="row">
                     <div class="col">
 
                     </div>
                     <div class="col">
-                        <a class="btn btn-primary float-start" href="tentanggkami">Tentang Kami</a>
+                        <a class="btn btn-primary float-start" href="tentanggkami">info lebih lanjut</a>
                     </div>
                     <div class="col">
 
@@ -116,21 +115,33 @@
         <!-- page 2 akhir -->
 
         <!-- page 3 -->
-        <!-- <div class="page3">
-        <div class="page3">
-            <p>
-                <span style="color : #5289E7;">Kami</span>
-                <span style="color : black">Ada</span>
-                <span style="color : #5289E7">Disini!</span>
-            </p>
-        </div>
+         <div class="page3">
+            <div class="page3">
+                <p>
+                    <span style="color : #5289E7;">Kami</span>
+                    <span style="color : black">Ada</span>
+                    <span style="color : #5289E7">Disini!</span>
+                </p>
+            </div>
+         <!-- Peta -->
+          <div class="peta">
+            <div class="col-md-7 mb-4 mb-lg-0">
+                    <!-- google maps nya -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4366.31954873799!2d111.53478297500345!3d-7.639779492376133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e79bfb03beb471b%3A0x16a030768cf7afc!2sRENEO%20LAUNDRY!5e1!3m2!1sen!2sid!4v1745205459695!5m2!1sen!2sid"
+                        width="1200" height="500" style="border:0; aspect-ratio: 16/9;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+               
+            </div>
+            </div>
 
-        <div class="container text-center my-5">
+
+        <!-- <div class="container text-center my-5">
             <div class="card mx-auto d-block" style="border: 0;">
                 <iframe src="lokasi.html" width="1000" height="500" frameborder="0"></iframe>
             </div>
-        </div>
-    </div><br><br><br><br><br> -->
+        </div> -->
+    </div><br><br><br><br><br><br><br><br><br>
         <!-- page 3 akhir -->
 
         <!-- page 5 -->
@@ -139,10 +150,10 @@
                 <div class="row">
                     <div class="col">
                         <img src="<?php echo base_url('/assets/images/page5.png'); ?>" class="img-fluid float-end"
-                            alt="orang page 2" width="800" />
+                            alt="orang page 5" width="800" />
                     </div>
                     <div class="col">
-                        <h1 class="display-4 float-start">
+                        <h1 class="display-4 float-start" >
                             Layanan Kami – Bersih, <br> Cepat, Tanpa Ribet!
                         </h1>
                         <br />
@@ -151,8 +162,8 @@
                             Dry Clean? ADA. <br>
                             Laundry Satuan? ADA BANGET. <br>
                         </p>
-                        <br><br><br><br><br><br><br><br><br><br><br>
-                        <a class="btn btn-primary float-start" href="layanann">Layanan</a>
+                        <br><br><br><br><br><br><br><br><br><br><br><br>
+                        <a class="btn btn-primary float-start" href="layanann">info lebih lanjut</a>
                     </div>
                 </div>
             </div>
@@ -164,7 +175,7 @@
         <div class="page6">
             <div class="iframe-container d-flex justify-content-center py-5">
                 <iframe src="<?php echo base_url('landing/biru'); ?>" width="100%" height="800"
-                    frameborder="0"></iframe>
+                    frameborder="0" ></iframe>
             </div>
         </div>
 
@@ -183,7 +194,7 @@
                     </div>
                     <div class="col">
                         <img src="<?php echo base_url('/assets/images/page7.png'); ?>" class="img-fluid float-end"
-                            alt="orang page 2" width="700" />
+                            alt="orang page 2" width="800" />
                     </div>
                 </div>
                 <div class="row">
@@ -191,7 +202,7 @@
 
                     </div>
                     <div class="col">
-                        <a class="btn btn-primary float-start" href="kontakk">Kontak</a>
+                        <a class="btn btn-primary float-start" href="kontakk">info lebih lanjut</a>
                     </div>
                     <div class="col">
 

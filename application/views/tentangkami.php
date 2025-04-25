@@ -15,6 +15,7 @@
 
     <!-- extend css dari aku  -->
     <link rel="stylesheet" href="<?php echo base_url('public/css/tentangkami.css'); ?>" />
+    
 </head>
 
 <body class="bg-white">
