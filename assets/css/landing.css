@@ -46,3 +46,21 @@
 .page4 .container .carousel-slide {
     text-align: center;
 }
+
+/* .iframe-container iframe {
+    width: 100%;
+    max-width: 1260px;
+    height: 800px;
+    border: none;
+} */
+
+.iframe-container {
+    width: 100%;
+    max-width: 100%;
+}
+
+#iframeBiru {
+    width: 100%;
+    border: none;
+    overflow: hidden;
+}

@@ -10,4 +10,8 @@ class landing extends CI_Controller
         $this->load->helper('url'); // Tambahin ini
         $this->load->view('templates/footer');
     }
+    public function biru()
+    {
+        $this->load->view('templates/biru'); // ini yang dimuat lewat iframe
+    }
 }

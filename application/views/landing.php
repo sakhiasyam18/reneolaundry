@@ -7,7 +7,8 @@
     <title>Reneo Laundry</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
-    <link rel="icon" href="img/logo.png" type="image/png">
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
+
 
     <!-- css -->
     <link rel="stylesheet" href="<?= base_url('assets/css/landing.css') ?>">
@@ -20,8 +21,8 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="logo navbar-brand d-flex align-items-center" href="#">
-                    <img src="img/logo.png" alt="Logo" width="60" class="me-2" />
-                    RENEO
+                    <img src="assets/images/logo-reneo-laundry.png" alt="Logo" width="60" class="me-2" />
+                    RENEO LAUNDRY
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -94,28 +95,28 @@
                         </p>
                     </h1>
                 </div>
-                <div class="col">
-                    <img src="<?php echo base_url('/assets/images/page2.png'); ?>" class="img-fluid float-end"
-                        alt="orang page 2" width="400" />
+                <div class="iframe-container">
+                    <iframe src="<?= base_url('landing/biru'); ?>" frameborder="0" scrolling="no" id="iframeBiru"
+                        onload="resizeIframe(this)">
+                    </iframe>
+                </div>
+                <div class="row">
+                    <div class="col">
+
+                    </div>
+                    <div class="col">
+                        <a class="btn btn-primary float-start" href="tentanggkami">Tentang Kami</a>
+                    </div>
+                    <div class="col">
+
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col">
+        </div><br><br><br><br><br><br><br>
+        <!-- page 2 akhir -->
 
-                </div>
-                <div class="col">
-                    <a class="btn btn-primary float-start" href="tentanggkami">info lebih lanjut</a>
-                </div>
-                <div class="col">
-
-                </div>
-            </div>
-        </div>
-    </div><br><br><br><br><br><br><br>
-    <!-- page 2 akhir -->
-
-    <!-- page 3 -->
-    <div class="page3">
+        <!-- page 3 -->
+        <!-- <div class="page3">
         <div class="page3">
             <p>
                 <span style="color : #5289E7;">Kami</span>
@@ -129,43 +130,44 @@
                 <iframe src="lokasi.html" width="1000" height="500" frameborder="0"></iframe>
             </div>
         </div>
-    </div><br><br><br><br><br>
-    <!-- page 3 akhir -->
+    </div><br><br><br><br><br> -->
+        <!-- page 3 akhir -->
 
-    <!-- page 5 -->
-    <div class="page5">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <img src="<?php echo base_url('/assets/images/page5.png'); ?>" class="img-fluid float-end"
-                        alt="orang page 2" width="800" />
-                </div>
-                <div class="col">
-                    <h1 class="display-4 float-start">
-                        Layanan Kami – Bersih, <br> Cepat, Tanpa Ribet!
-                    </h1>
-                    <br />
-                    <p class="lead float-start">
-                        Cuci Kilat? ADA. <br>
-                        Dry Clean? ADA. <br>
-                        Laundry Satuan? ADA BANGET. <br>
-                    </p>
-                    <br><br><br><br><br><br><br><br><br><br><br>
-                    <a class="btn btn-primary float-start" href="layanann">info lebih lanjut</a>
+        <!-- page 5 -->
+        <div class="page5">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <img src="<?php echo base_url('/assets/images/page5.png'); ?>" class="img-fluid float-end"
+                            alt="orang page 2" width="800" />
+                    </div>
+                    <div class="col">
+                        <h1 class="display-4 float-start">
+                            Layanan Kami – Bersih, <br> Cepat, Tanpa Ribet!
+                        </h1>
+                        <br />
+                        <p class="lead float-start">
+                            Cuci Kilat? ADA. <br>
+                            Dry Clean? ADA. <br>
+                            Laundry Satuan? ADA BANGET. <br>
+                        </p>
+                        <br><br><br><br><br><br><br><br><br><br><br>
+                        <a class="btn btn-primary float-start" href="layanann">Layanan</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div><br><br><br><br><br><br><br>
-    <!-- page 5 akhir -->
+        </div><br><br><br><br><br><br><br>
+        <!-- page 5 akhir -->
 
 
-    <!-- page 6 -->
-    <div class="page6">
-        <div class="iframe-container d-flex justify-content-center py-5">
-            <div class="page6">
-                <iframe src="biru.html" width="1260vh" height="800" frameborder="0"></iframe>
+        <!-- page 6 -->
+        <div class="page6">
+            <div class="iframe-container d-flex justify-content-center py-5">
+                <iframe src="<?php echo base_url('landing/biru'); ?>" width="100%" height="800"
+                    frameborder="0"></iframe>
             </div>
         </div>
+
         <!-- page 6 akhir -->
 
 
@@ -189,7 +191,7 @@
 
                     </div>
                     <div class="col">
-                        <a class="btn btn-primary float-start" href="kontakk">info lebih lanjut</a>
+                        <a class="btn btn-primary float-start" href="kontakk">Kontak</a>
                     </div>
                     <div class="col">
 
@@ -200,6 +202,9 @@
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
+        function resizeIframe(iframe) {
+            iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+        }
         </script>
 </body>
 
