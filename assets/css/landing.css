@@ -1,70 +1,249 @@
-.body {
-    background-color: white;
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    color: #333;
 }
 
-.bg {
+/* Background and Hero Section */
+.bg-section {
     background-color: #a5e0ff;
     position: relative;
+    padding-bottom: 0;
+    overflow: hidden;
 }
 
+/* Navbar Styles */
 .navbar {
-    background-color: #a5e0ff;
-    padding-top: 1rem;
+    background-color: transparent;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
-.container .jumbotron {
-    padding-top: 2rem;
-    background-color: #a5e0ff;
-    
-}
-.container .jumbotron .row .col h1{
-    margin-left: 100px;
-    margin-top: 80px;
+.navbar-brand {
+    font-weight: bold;
 }
 
-.page2 {
-    padding-top: 2rem;
-}
-.page2 .container .row .col h1{
-    margin-top: 4rem;
+.nav-link {
+    font-weight: 500;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
 }
 
-.page3 .page3 {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 75px;
+.nav-link:hover {
     color: #5289E7;
-    text-align: center;
-}
-.page3 .peta{
-    display: block;
-    margin-left: 30px;
 }
 
-.page4 .container .page4 {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 75px;
-    color: #5289E7;
-    text-align: center;
+/* Hero Section */
+.hero-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
-.page4 .container .carousel-slide {
-    text-align: center;
+.hero-text {
+    padding-left: 2rem;
 }
 
-/* .iframe-container iframe {
+.hero-text h1 {
+    margin-bottom: 1.5rem;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Wave Divider */
+.wave-divider {
+    position: relative;
+    bottom: -5px;
+    left: 0;
     width: 100%;
-    max-width: 1260px;
-    height: 800px;
+    overflow: hidden;
+    line-height: 0;
+}
+
+/* Section Styles */
+section {
+    padding: 5rem 0;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+/* About Section */
+.about-section h2 {
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+/* Map Section */
+.map-section .text-primary {
+    color: #5289E7 !important;
+}
+
+.map-container {
+    margin-top: 2rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.map-container iframe {
+    max-width: 100%;
+    aspect-ratio: 16/9;
+}
+
+/* Services Section */
+.services-section h2 {
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+/* Iframe Section */
+.iframe-container {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.iframe-container iframe {
+    width: 100%;
     border: none;
-} */
+    max-width: 100%;
+}
+
+/* Contact Section */
+.contact-section h2 {
+    margin-bottom: 2rem;
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #5289E7;
+    border-color: #5289E7;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #4070c0;
+    border-color: #4070c0;
+    transform: translateY(-2px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+    .hero-text {
+        padding-left: 1rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .hero-image {
+        max-width: 80%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .about-section .col-lg-6:first-child,
+    .services-section .col-lg-6:last-child,
+    .contact-section .col-lg-6:first-child {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .btn-primary {
+        margin: 0 auto;
+        display: block;
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .display-4 {
+        font-size: 2.2rem;
+    }
+
+    .lead {
+        font-size: 1.1rem;
+    }
+
+    .map-container iframe {
+        height: 350px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .navbar-brand img {
+        width: 45px;
+    }
+
+    .display-4 {
+        font-size: 1.8rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+}
+
+.feature-box {
+    background-color: #a5e0ff;
+    padding: 50px 20px;
+}
+
+.feature-card {
+    transition: all 0.3s ease;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff33;
+}
+
+.icon-box {
+    background-color: #fff;
+    width: 70px;
+    height: 70px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px auto;
+}
+
+.icon-box img {
+    width: 35px;
+}
+
+.feature-title {
+    font-weight: bold;
+    font-size: 18px;
+    color: #3e3e3e;
+}
+
+.feature-text {
+    color: #3e3e3e;
+    opacity: 0.8;
+    font-size: 14px;
+}
 
 .iframe-container {
     width: 100%;

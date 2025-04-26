@@ -7,65 +7,10 @@
     <title>Fitur Laundry</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <style>
-    body {
-        font-family: "Segoe UI", sans-serif;
-        overflow: hidden;
-    }
-
-    .feature-box {
-        background-color: #a5e0ff;
-        padding: 50px 20px;
-    }
-
-    .feature-card {
-        transition: all 0.3s ease;
-        border-radius: 12px;
-        padding: 20px;
-    }
-
-    .feature-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        background-color: #ffffff33;
-    }
-
-    .icon-box {
-        background-color: #fff;
-        width: 70px;
-        height: 70px;
-        border-radius: 12px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto 20px auto;
-    }
-
-    .icon-box img {
-        width: 35px;
-    }
-
-    .feature-title {
-        font-weight: bold;
-        font-size: 18px;
-        color: #3e3e3e;
-    }
-
-    .feature-text {
-        color: #3e3e3e;
-        opacity: 0.8;
-        font-size: 14px;
-    }
-
-    .iframe-container {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    #iframeBiru {
-        width: 100%;
-        border: none;
-        overflow: hidden;
-    }
+        body {
+            font-family: "Segoe UI", sans-serif;
+            overflow: hidden;
+        }
     </style>
 </head>
 
@@ -124,9 +69,9 @@
         </div>
     </section>
     <script>
-    function resizeIframe(iframe) {
-        iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
-    }
+        function resizeIframe(iframe) {
+            iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+        }
     </script>
 </body>
 
