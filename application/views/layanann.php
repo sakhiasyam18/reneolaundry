@@ -27,19 +27,19 @@
 
     <!-- buat baground agar transparan -->
     <style>
-    .background-watermark {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url('<?php echo base_url("assets/images/logo-reneo-laundry.png"); ?>');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-        opacity: 0.1;
-        z-index: -1;
-    }
+        .background-watermark {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('<?php echo base_url("assets/images/logo-reneo-laundry.png"); ?>');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            opacity: 0.1;
+            z-index: -1;
+        }
     </style>
 </head>
 
@@ -357,19 +357,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- CTA Section -->
-            <!-- <div class="row mb-5" data-aos="fade-up">
-                <div class="col-12">
-                    <div class="cta-section text-center">
-                        <h3 class="mb-3">Butuh Layanan Laundry?</h3>
-                        <p class="mb-4">Dapatkan pakaian bersih, wangi, dan rapi dengan layanan kami</p>
-                        <a href="https://wa.me/6285837043478" class="btn cta-btn">
-                            <i class="fab fa-whatsapp me-2"></i>Hubungi Sekarang
-                        </a>
-                    </div>
-                </div>
-            </div> -->
         </div>
     </div>
 
@@ -384,22 +371,22 @@
 
     <!-- Custom JS -->
     <script>
-    // Inisialisasi animasi AOS
-    document.addEventListener('DOMContentLoaded', function() {
-        AOS.init({
-            duration: 800,
-            easing: 'ease-in-out',
-            once: true
-        });
+        // Inisialisasi animasi AOS
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true
+            });
 
-        // Menambahkan class FA untuk icon setrika yang tidak ada di standard FA
-        // Menggunakan kelas custom untuk icon setrika
-        var ironIcon = document.querySelectorAll('.fas.fa-iron');
-        ironIcon.forEach(function(icon) {
-            icon.classList.remove('fa-iron');
-            icon.classList.add('fa-temperature-high'); // Alternativ icon
+            // Menambahkan class FA untuk icon setrika yang tidak ada di standard FA
+            // Menggunakan kelas custom untuk icon setrika
+            var ironIcon = document.querySelectorAll('.fas.fa-iron');
+            ironIcon.forEach(function(icon) {
+                icon.classList.remove('fa-iron');
+                icon.classList.add('fa-temperature-high'); // Alternativ icon
+            });
         });
-    });
     </script>
 </body>
 
