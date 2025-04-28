@@ -134,11 +134,6 @@
     <!-- Iframe Section -->
     <section class="iframe-section py-5">
         <div class="container">
-            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="#a5e0ff" fill-opacity="1"
-                    d="M0,64L18.5,69.3C36.9,75,74,85,111,112C147.7,139,185,181,222,192C258.5,203,295,181,332,181.3C369.2,181,406,203,443,208C480,213,517,203,554,176C590.8,149,628,107,665,117.3C701.5,128,738,192,775,192C812.3,192,849,128,886,128C923.1,128,960,192,997,213.3C1033.8,235,1071,213,1108,202.7C1144.6,192,1182,192,1218,181.3C1255.4,171,1292,149,1329,122.7C1366.2,96,1403,64,1422,48L1440,32L1440,320L1421.5,320C1403.1,320,1366,320,1329,320C1292.3,320,1255,320,1218,320C1181.5,320,1145,320,1108,320C1070.8,320,1034,320,997,320C960,320,923,320,886,320C849.2,320,812,320,775,320C738.5,320,702,320,665,320C627.7,320,591,320,554,320C516.9,320,480,320,443,320C406.2,320,369,320,332,320C295.4,320,258,320,222,320C184.6,320,148,320,111,320C73.8,320,37,320,18,320L0,320Z">
-                </path>
-            </svg> -->
             <section class="container text-center">
                 <div class="container">
                     <div class="row justify-content-center">
@@ -218,9 +213,9 @@
                 crossorigin="anonymous">
             </script>
             <script>
-            function resizeIframe(iframe) {
-                iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
-            }
+                function resizeIframe(iframe) {
+                    iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+                }
             </script>
 </body>
 
