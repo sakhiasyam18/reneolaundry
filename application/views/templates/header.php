@@ -1,57 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
-        rel="stylesheet">
-    <style>
-    .header {
-        padding: 15px 20px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        /* position: sticky; */
-        top: 0;
-        z-index: 1000;
-    }
-
-    .back-btn {
-        background-color: #ffffff;
-        color: #1f2937;
-        border: 1px solid #e5e7eb;
-        padding: 8px 16px;
-        border-radius: 8px;
-        font-weight: 500;
-        transition: all 0.3s ease;
-        display: inline-flex;
-        align-items: center;
-        text-decoration: none;
-    }
-
-    .back-btn:hover {
-        background-color: #f3f4f6;
-        transform: translateX(-2px);
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    .back-btn i {
-        margin-right: 6px;
-        font-size: 1.1rem;
-    }
-    </style>
-</head>
-
-<body>
-    <header class="header container">
-        <div class="container">
-            <a href="<?= base_url() ?>" class="back-btn">
-                <i class="bi bi-arrow-left"></i> Back
-            </a>
+<nav class="navbar navbar-expand-lg bg-light shadow-sm">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="<?= base_url('landing') ?>">
+            <img src="<?= base_url('assets/images/logo-reneo-laundry.png') ?>" alt="Logo" width="60" class="me-2" />
+            <strong>RENEO LAUNDRY</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="<?= base_url('tentanggkami') ?>">Tentang Kami</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?= base_url('layanann') ?>">Layanan</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?= base_url('testimoni') ?>">Testimoni</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?= base_url('kontakk') ?>">Kontak</a>
+                </li>
+            </ul>
         </div>
-    </header>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-</body>
-
-</html>
+    </div>
+</nav>
